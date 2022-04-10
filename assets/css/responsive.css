@@ -47,6 +47,13 @@ max-width: 420px;height: 541px;
 
   max-height: 110px;
     -webkit-line-clamp: 3;margin-left: 0;letter-spacing: 0.1px;line-height: 36px;}
+    .session-list .session-item>div{
+      width: 394px;
+      height: 475px;
+    }
+    .session-sec .yg-btn{
+      width: 394px;
+    }
 }
 
 @media only screen and (min-width:991px) {
