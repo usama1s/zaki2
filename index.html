@@ -5,14 +5,18 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="assets/slick-master/slick/slick.css">
+  <link rel="stylesheet" href="assets/slick-master/slick/slick-theme.css">
 
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -30,7 +34,7 @@
           الفترة من 24 - 28 سبتمبر من العام 2022 الموافق 28/2 الى 2/3 1443هـ
         </a>
       </div>
-      <div class="">
+      <!-- <div class=""> -->
         <a class="btn" href="#">
           <img src="assets/images/icons/location.svg" alt="">
           مركز الرياض الدولي للمعارض والمؤتمرات
@@ -64,6 +68,12 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <img src="assets/images/icons/hamburger.svg" alt="">
     </button>
+
+    <div class="page d-block d-xl-none">
+      <a href="#">
+        الصفحة الرئيسية
+      </a>
+    </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
@@ -166,8 +176,11 @@
         </li>
 
       </ul>
-
+      <button class="yg-btn d-btn text-white d-none d-xl-block" type="button" name="button">سجل إهتمامك</button>
     </div>
+    <button class="yg-btn d-btn text-white d-block d-xl-none" type="button" name="button">سجل إهتمامك</button>
+
+
   </nav>
 
 
@@ -177,40 +190,55 @@
 
 
 
-  <section class="sec-box banner-sec">
+  <section class="sec-box banner-sec" style="bacground-image:url('assets/images/banners/3.jpg')">
     <div class="">
-      <img class="bg" src="assets/images/banners/3.jpg" alt="">
+
+      <div class="banner-slider">
+        <div class="bg" style="background-image:url('assets/images/banners/2.jpg')">
+
+        </div>
+        <div class="bg" style="background-image:url('assets/images/banners/3.jpg')">
+
+        </div>
+      </div>
+
+      <!-- <img class="bg" src="assets/images/banners/3.jpg" alt=""> -->
       <img class="ran-lines d-none d-xl-block" src="assets/images/ran-lines.svg" alt="">
       <div class="row flex-row-reverse">
-        <div class="col-12 col-xl-6">
-          <div class="d-flex align-items-center justify-content-between">
-            <div class="vision-2030">
-              <img src="assets/images/vision-2030.svg" alt="">
-            </div>
-            <div class="ksa-map">
-              <img src="assets/images/map-KSA.svg" alt="">
-            </div>
+        <div class="col-12 col-xl-7">
+          <div class="row">
+            <div class="col-12 col-xl-10 mr-auto">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="vision-2030">
+                  <img src="assets/images/vision-2030.svg" alt="">
+                </div>
+                <div class="ksa-map">
+                  <img src="assets/images/map-KSA.svg" alt="">
+                </div>
 
+              </div>
+            </div>
           </div>
 
+
           <div class="info mt-4 mt-xl-5 pt-xl-4">
-            <h1 class="font-18-25 text-white text-center text-xl-right mb-3 mb-xl-4 pb-1 pb-xl-3 pt-xl-3">
+            <h1 class="font-18-25 text-white text-center text-xl-right mb-3 mb-xl-3 pb-1 pb-xl-2 pt-xl-3">
               تحت رعاية خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود - حفظه الله
             </h1>
 
-            <h1 class="font-18-25 text-white text-center text-xl-right mb-3 mb-xl-4 pb-1 pb-xl-3">
+            <h1 class="font-18-25 text-white text-center text-xl-right mb-3 mb-xl-3 pb-1 pb-xl-2 right-line">
               معرض مشروعات مدن متميزة في عهد خادم الحرمين الشريفين 2022
             </h1>
 
-            <h1 class="font-18-25 text-white text-center text-xl-right  mb-3 mb-xl-4 pb-1 pb-xl-3">
+            <h1 class="font-18-25 text-white text-center text-xl-right  mb-0 mb-xl-3 pb-1 pb-xl-2">
               يصاحبه المنتدى الأول لآثار برنامج التحول الوطني على المدن السعودية
             </h1>
           </div>
 
 
         </div>
-        <div class="col-12 col-xl-6">
-          <div class="person">
+        <div class="col-12 col-xl-5 mt-xl-5">
+          <div class="person mt-xl-5">
             <img src="assets/images/king-salman.png" alt="">
           </div>
         </div>
@@ -242,12 +270,13 @@
 
 
 
-  <section class="sec-box pt-4 pt-xl-5 pb-0 pb-xl-5">
+  <section class="sec-box pt-4 pt-xl-5 pb-0 pb-xl-5 right-bg">
     <div class="pt-3 pt-xl-5 mw-600 pb-0 pb-xl-5">
-      <div class="row">
+      <div class="row flex-column-reverse flex-xl-row">
 
         <div class="col-12 col-xl-6 pt-3 pt-xl-0 d-flex align-items-center justify-content-center">
-          <div class="">
+
+          <div class="right-info mr-xl-auto from-right">
             <h1 class="font-18-30 text-green g-dash mb-3 mt-3 mt-xl-0">
               تعريف الحدث
             </h1>
@@ -257,7 +286,7 @@
               المحققــــة لبرنامــــــــج التحــــــــول الوطــــــــــــني في كافــــــــــة مجــــــــــــالات التنميـــة
             </p>
 
-            <div class="d-flex align-items-center justify-content-start mt-5">
+            <div class="d-flex align-items-center justify-content-start mt-4">
               <button class="yg-btn font-15-17 text-white ml-20 mw-220 px-0 w-50">
                 المزيد عن المعرض
               </button>
@@ -272,7 +301,7 @@
         </div>
 
         <div class="col-12 col-xl-6">
-          <div class="three-images">
+          <div class="three-images from-left">
             <div class="two">
               <div class="">
                 <img src="assets/images/home/img2.png" alt="">
@@ -300,76 +329,17 @@
 
 
 
-  <section class="sec-box pt-5">
-    <div class="mw-600">
-      <h1 class="font-18-30 text-green g-dash mb-3 mt-3 mt-xl-0 text-center">
-        الجهات المستهدفة المشاركة
-      </h1>
-      <p class="font-15-18 text-black text-right pt-4 text-center">
-        يستهدف الحدث مشاركة العديد من الجهات الحكومية والخاصة والتي تتقاطع اعمالها مع العمل البلدي والإسكان لعرض آليات ومبادرات العمل المشترك وإبراز النجاحات التي تحققت والخدمات المقدمة لكافة المستفيدين مما ساهم في تحقيق مستهدفات رؤية المملكة 2020
-        وادى الى الارتقاء بمستوى الخدمات وتحقيق المعايير العالمية لجودة الحياه.
+  <section class="sec-box pt-4 pt-xl-5 mt-xl-4 from-bottom">
+    <div class="">
+      <div class="mw-600 ">
+        <h1 class="font-18-30 text-green g-dash mb-3 mt-3 mt-xl-0 text-center">
+          الجهات المستهدفة المشاركة
+        </h1>
+        <p class="font-15-18 text-black text-right pt-4 text-center">
+          يستهدف الحدث مشاركة العديد من الجهات الحكومية والخاصة والتي تتقاطع اعمالها مع العمل البلدي والإسكان لعرض آليات ومبادرات العمل المشترك وإبراز النجاحات التي تحققت والخدمات المقدمة لكافة المستفيدين مما ساهم في تحقيق مستهدفات رؤية المملكة 2020
+          وادى الى الارتقاء بمستوى الخدمات وتحقيق المعايير العالمية لجودة الحياه.
 
-      </p>
-    </div>
-  </section>
-
-
-
-
-
-  <section class="sec-box py-4 py-lg-5">
-    <div class="pt-2 pt-lg-4 pb-3 pb-lg-5">
-      <h1 class="font-18-30 text-green g-dash mb-3  ">
-        ثانيا: مشاركة كافة برامج ومبادرات الاسكان
-      </h1>
-
-
-      <div class="slick-slider-all">
-        <div class="slider-item">
-          <img src="assets/images/logos/1.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/2.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/3.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/4.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/5.png" alt="">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-
-  <section class="sec-box py-4 py-lg-5 bg-black">
-    <div class="pt-2 pt-lg-4 pb-3 pb-lg-5">
-      <h1 class="font-18-30 text-green g-dash mb-3  ">
-        ثانيا: مشاركة كافة برامج ومبادرات الاسكان
-      </h1>
-
-
-      <div class="slick-slider-all">
-        <div class="slider-item">
-          <img src="assets/images/logos/1.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/2.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/3.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/4.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/5.png" alt="">
-        </div>
+        </p>
       </div>
 
     </div>
@@ -379,9 +349,70 @@
 
 
 
+  <section class="sec-box pt-5 pb-4 py-lg-5 slider-sec   from-bottom">
+    <div class="pt-4 pt-lg-4 pb-3 pb-lg-5">
+      <h1 class="font-18-30 text-green g-dash mb-4  ">
+        أولا: مشاركة ديوان الوزارة وكافة الأمانات على مستوى المملكة </h1>
 
-  <section class="sec-box py-4 py-lg-5">
-    <div class="pt-2 pt-lg-4">
+
+      <div class="slick-slider-all pt-2">
+        <div class="slider-item">
+          <img src="assets/images/home/slider1/1.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider1/2.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider1/3.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider1/4.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider1/5.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="sec-box py-4 py-lg-5 bg-black ">
+    <div class="pt-2 pt-lg-4 pb-3 pb-lg-5">
+      <h1 class="font-18-30 text-green g-dash mb-4  ">
+        ثانيا: مشاركة كافة برامج ومبادرات الاسكان
+      </h1>
+
+
+      <div class="slick-slider-all pt-2">
+        <div class="slider-item">
+          <img src="assets/images/home/slider2/1.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider2/2.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider2/3.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider2/4.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider2/5.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="sec-box py-4 py-lg-5 from-bottom">
+    <div class="pt-2 pt-lg-4 pb-5 pb-lg-4">
       <h1 class="font-18-30 text-green g-dash mb-3  ">
         ثالثا: الشركاء الداعمون للمعرض والمنتدى
       </h1>
@@ -390,16 +421,16 @@
 
     <div class="">
       <div class="row">
-        <div class="col-12 col-lg-8 col-xl-3">
-          <div class="">
-            <h1 class="font-18-24 text-black font-weight-bold">
+        <div class="col-12 col-lg-8 col-xl-3 d-flex align-items-cente justify-content-center">
+          <div class="pb-lg-5 d-flex align-items-cente justify-content-center flex-column">
+            <h1 class="font-18-24 text-black ">
               <span class="text-green">
                 أولا
               </span>
               برامج الرؤية ذات العلاقة
 
             </h1>
-            <p class="font-15-16 text-grey">
+            <p class="font-15-16 text-grey mb-lg-5">
               هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان
             </p>
           </div>
@@ -454,19 +485,19 @@
 
 
 
-  <section class="sec-box pt-3 pt-lg-4">
+  <section class="sec-box pt-0 pt-lg-4  from-bottom">
     <div class=" pb-4 pb-lg-5">
       <div class="row">
         <div class="col-12 col-md-8 col-lg-7 col-xl-6 mx-auto pt-3">
           <div class="">
-            <h1 class="font-18-24 text-black font-weight-bold text-right text-md-center">
+            <h1 class="font-18-24 text-black text-right text-md-center mb-4">
               <span class="text-green">
                 ثانيا:
               </span>
               الوزارات المشاركة في تنمية وتطوير المدن
 
             </h1>
-            <p class="font-15-16 text-grey text-right text-md-center">
+            <p class="font-15-16 text-grey text-right text-md-center mt-3 pt-2">
               كافة الوزارات الداعمة والمشاركة في تنمية وتطوير المدن والتي تتقاطع اعمالها مع العمل البلدي والاسكان
             </p>
           </div>
@@ -477,19 +508,54 @@
     <div class="pt-2 pt-lg-3">
       <div class="slick-slider-all">
         <div class="slider-item">
-          <img src="assets/images/logos/1.png" alt="">
+          <img src="assets/images/home/slider3/1.png" alt="">
         </div>
         <div class="slider-item">
-          <img src="assets/images/logos/2.png" alt="">
+          <img src="assets/images/home/slider3/2.png" alt="">
         </div>
         <div class="slider-item">
-          <img src="assets/images/logos/3.png" alt="">
+          <img src="assets/images/home/slider3/3.png" alt="">
         </div>
         <div class="slider-item">
-          <img src="assets/images/logos/4.png" alt="">
+          <img src="assets/images/home/slider3/4.png" alt="">
         </div>
         <div class="slider-item">
-          <img src="assets/images/logos/5.png" alt="">
+          <img src="assets/images/home/slider3/5.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <section class="sec-box pt-4 pb-4 py-lg-5 slider-sec  from-bottom">
+    <div class="pt-4 pt-lg-4 pb-3 pb-lg-5">
+      <h1 class="font-18-30 text-black  mb-4  ">
+        <span class="text-green">
+          ثالثا:
+        </span>
+        الهيئات الملكية وهيئات تطوير المدن والهيئات العامة
+      </h1>
+
+
+      <div class="slick-slider-all pt-2">
+        <div class="slider-item">
+          <img src="assets/images/home/slider4/1.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider4/2.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider4/3.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider4/4.png" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="assets/images/home/slider4/5.png" alt="">
         </div>
       </div>
 
@@ -501,49 +567,8 @@
 
 
 
-  <section class="sec-box ">
-    <div class="">
-      <div class="row pt-5">
-        <div class="col-12 col-md-8 col-lg-7 col-xl-6 mx-auto pt-3">
-          <div class="">
-            <h1 class="font-18-24 text-black font-weight-bold text-right text-md-center">
-              <span class="text-green">
-                ثانيا:
-              </span>
-              الهيئات الملكية وهيئات تطوير المدن والهيئات العامة
-            </h1>
-          </div>
-        </div>
-      </div>
 
-    </div>
-    <div class="pt-2 pt-lg-3">
-      <div class="slick-slider-all">
-        <div class="slider-item">
-          <img src="assets/images/logos/1.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/2.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/3.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/4.png" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="assets/images/logos/5.png" alt="">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-
-  <section class="video-sec pt-5 mt-lg-3">
+  <section class="video-sec pt-0 mt-lg-3 ">
     <div class="pt-2 pt-md-4 pt-lg-5">
       <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
       </iframe>
@@ -555,14 +580,17 @@
 
 
   <section class="sec-box pt-5">
-    <div class="mw-600 pt-lg-4 mt-lg-3">
-      <h1 class="font-18-30 text-green g-dash mb-3  text-center">
-        المشاريع المستهدفة للعرض والمشاركة
-      </h1>
-      <p class="font-15-18 text-black text-right pt-4 text-center">
-        بالإضافة إلى مختلف مشروعات العمل البلدي ومشروعات الإسكان يقوم المعرض بعرض لكبرى المشروعات المنفذة والجاري تنفيذها في كافة مناطق ومدن المملكة والتي تشارك وبشكل فعال في نمو كافة المدن السعودية وتساهم في تحقيق مستهدفات الرؤية وإثراء اقتصاد
-        المملكة بشكل عام.
-      </p>
+    <div class=" pt-lg-4 mt-lg-3">
+      <div class="mw-600">
+        <h1 class="font-18-30 text-green g-dash mb-3  text-center">
+          المشاريع المستهدفة للعرض والمشاركة
+        </h1>
+        <p class="font-15-18 text-black text-right pt-4 text-center">
+          بالإضافة إلى مختلف مشروعات العمل البلدي ومشروعات الإسكان يقوم المعرض بعرض لكبرى المشروعات المنفذة والجاري تنفيذها في كافة مناطق ومدن المملكة والتي تشارك وبشكل فعال في نمو كافة المدن السعودية وتساهم في تحقيق مستهدفات الرؤية وإثراء اقتصاد
+          المملكة بشكل عام.
+        </p>
+      </div>
+
     </div>
   </section>
 
@@ -570,13 +598,13 @@
   <section class="sec-box mt-5">
     <div class="">
       <div class="o-items-list d-flex align-items-center justify-content-center flex-wrap">
-        <div class="o-item" style="background-image: url('assets/images/sample/1ksep.jpg')">
+        <div class="o-item from-left" style="background-image: url('assets/images/home/oxagon/1.png')">
           <div class="">
             <div class="logo">
-              <img src="assets/images/sample-logo/o-logo1.png" alt="">
+              <img src="assets/images/home/oxagon-logo/1.png" alt="">
             </div>
             <button class="g-span-btn">
-              مشروع القدية
+              مشروع نيوم
               <span>
                 <img src="assets/images/icons/left-w.svg" alt="">
 
@@ -585,13 +613,41 @@
           </div>
         </div>
 
-        <div class="o-item" style="background-image: url('assets/images/sample/1ksep.jpg')">
+        <div class="o-item from-left-f" style="background-image: url('assets/images/home/oxagon/2.png')">
           <div class="">
             <div class="logo">
-              <img src="assets/images/sample-logo/o-logo1.png" alt="">
+              <img src="assets/images/home/oxagon-logo/2.png" alt="">
             </div>
             <button class="g-span-btn">
-              مشروع القدية
+              مشروع القدية <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/3.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/3.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع ذا لاين <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/4.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/4.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع أوكساجون
               <span>
                 <img src="assets/images/icons/left-w.svg" alt="">
 
@@ -600,13 +656,13 @@
           </div>
         </div>
 
-        <div class="o-item" style="background-image: url('assets/images/sample/1ksep.jpg')">
+        <div class="o-item from-left-f" style="background-image: url('assets/images/home/oxagon/5.png')">
           <div class="">
             <div class="logo">
-              <img src="assets/images/sample-logo/o-logo1.png" alt="">
+              <img src="assets/images/home/oxagon-logo/5.png" alt="">
             </div>
             <button class="g-span-btn">
-              مشروع القدية
+              مشروع أمالا
               <span>
                 <img src="assets/images/icons/left-w.svg" alt="">
 
@@ -615,14 +671,153 @@
           </div>
         </div>
 
-        <div class="o-item" style="background-image: url('assets/images/sample/1ksep.jpg')">
+        <div class="o-item from-left-f" style="background-image: url('assets/images/home/oxagon/6.png')">
           <div class="">
             <div class="logo">
-              <img src="assets/images/sample-logo/o-logo1.png" alt="">
+              <img src="assets/images/home/oxagon-logo/6.png" alt="">
             </div>
             <button class="g-span-btn">
-              مشروع القدية
-              <span>
+              مشروع البحر الأحمر <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/7.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/7.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              الرياض الخضراء <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/8.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/8.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع الرياض آرت <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-left-f" style="background-image: url('assets/images/home/oxagon/9.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/9.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع مركز الملك عبد الله المالي <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-left-f" style="background-image: url('assets/images/home/oxagon/10.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/10.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع وسط جدة <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/11.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/11.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع مطار الملك عبد العزيز <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/12.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/12.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع رؤى المدينة <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-left-f" style="background-image: url('assets/images/home/oxagon/13.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/13.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع الملك سلمان للطاقة <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-left-f" style="background-image: url('assets/images/home/oxagon/14.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/14.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع الملك عبد العزيز للنقل العام <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/15.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/15.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع سكاكا للطاقة الشمسية <span>
+                <img src="assets/images/icons/left-w.svg" alt="">
+
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="o-item from-right-f" style="background-image: url('assets/images/home/oxagon/16.png')">
+          <div class="">
+            <div class="logo">
+              <img src="assets/images/home/oxagon-logo/16.png" alt="">
+            </div>
+            <button class="g-span-btn">
+              مشروع الفيصلية <span>
                 <img src="assets/images/icons/left-w.svg" alt="">
 
               </span>
@@ -642,8 +837,8 @@
 
   <section class="nakat-sec sec-box">
 
-    <div class="">
-      <img class="king d-none d-xl-block" src="assets/images/king-salman-2.png" alt="">
+    <div class="from-left">
+      <img class="king d-none d-xl-block from-right" src="assets/images/king-salman-2.png" alt="">
 
       <h1 class="font-18-30 text-green g-dash ">
         نقاط التميز
@@ -686,6 +881,23 @@
 
 
 
+  <section class="pictures-slider overflow-hidden">
+    <div class="pictures-slider-list">
+      <div class="img" style="background-image: url('assets/images/home/oxagon1.jpg')">
+
+      </div>
+      <div class="img" style="background-image: url('assets/images/home/oxagon2.jpg')">
+
+      </div>
+      <div class="img" style="background-image: url('assets/images/home/oxagon3.jpeg')">
+
+      </div>
+
+    </div>
+  </section>
+
+
+
 
 
 
@@ -693,17 +905,17 @@
     <div class="">
       <div class="mw-600 mb-3">
         <h1 class="font-18-30 text-green g-dash mb-3 mt-3 mt-xl-0 text-center">
-المركز الاعلامي
+          المركز الاعلامي
         </h1>
         <p class="font-15-18 text-black text-right pt-4 text-center">
-        هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان
+          هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان
 
         </p>
       </div>
       <div class="t-items-list">
 
         <div class="t-item">
-          <div class="img" style="background-image: url('assets/images/sample/amaala2.jpg')">
+          <div class="img" style="background-image: url('assets/images/home/ox1.png')">
             <h2 class="text-white text-right">
               ادارة المدن ومجال التطوير العقاري وادارة المشروعات الكبرى على مستوى المملكة
             </h2>
@@ -716,7 +928,7 @@
           </div>
           <div class="info">
             <h3 class="font-15-16">
-يهدف الحدث الى اظهار الدور الهام الذي تقوم به حكومة خادم الحرمين الشريفين على كافة الأصعدة من خلال العرض            </h3>
+              يهدف الحدث الى اظهار الدور الهام الذي تقوم به حكومة خادم الحرمين الشريفين على كافة الأصعدة من خلال العرض </h3>
 
             <a class="font-12-17 dash-atag" href="#">
               <span></span>
@@ -726,7 +938,7 @@
         </div>
 
         <div class="t-item">
-          <div class="img" style="background-image: url('assets/images/sample/1ksep.jpg')">
+          <div class="img" style="background-image: url('assets/images/home/ox2.png')">
             <h2 class="text-white text-right">
               ادارة المدن ومجال التطوير العقاري وادارة المشروعات الكبرى على مستوى المملكة
             </h2>
@@ -739,7 +951,7 @@
           </div>
           <div class="info">
             <h3 class="font-15-16">
-يهدف الحدث الى اظهار الدور الهام الذي تقوم به حكومة خادم الحرمين الشريفين على كافة الأصعدة من خلال العرض            </h3>
+              يهدف الحدث الى اظهار الدور الهام الذي تقوم به حكومة خادم الحرمين الشريفين على كافة الأصعدة من خلال العرض </h3>
 
             <a class="font-12-17 dash-atag" href="#">
               <span></span>
@@ -749,7 +961,7 @@
         </div>
 
         <div class="t-item">
-          <div class="img" style="background-image: url('assets/images/sample/1ksep.jpg')">
+          <div class="img" style="background-image: url('assets/images/home/ox3.png')">
             <h2 class="text-white text-right">
               ادارة المدن ومجال التطوير العقاري وادارة المشروعات الكبرى على مستوى المملكة
             </h2>
@@ -772,29 +984,7 @@
           </div>
         </div>
 
-        <div class="t-item">
-          <div class="img" style="background-image: url('assets/images/sample/1ksep.jpg')">
-            <h2 class="text-white text-right">
-              ادارة المدن ومجال التطوير العقاري وادارة المشروعات الكبرى على مستوى المملكة
-            </h2>
-            <p class="font-12-14 text-white">
-              <img class="ml-20" src="assets/images/icons/clock.svg" alt="">
-              <span>
-                منذ 23 يوم - 22 فبراير ,2022
-              </span>
-            </p>
-          </div>
-          <div class="info">
-            <h3 class="font-15-16">
-              يهدف الحدث الى اظهار الدور الهام الذي تقوم به حكومة
-            </h3>
 
-            <a class="font-12-17 dash-atag" href="#">
-              <span></span>
-              تفاصيل الخبر
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -810,16 +1000,16 @@
       <div class="row flex-column-reverse flex-md-row">
         <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
           <div class="d-flex align-items-center justify-content-start flex-column mt-5 mt-md-0">
-              <button class="yg-btn font-15-16 text-white px-0 w-50 mb-3">
-                <img class="ml-3" src="assets/images/icons/drive-w.svg" alt="">
-تحميل الملف التعريفي
-              </button>
+            <button class="yg-btn font-15-16 text-white px-0 w-50 mb-3">
+              <img class="ml-3" src="assets/images/icons/drive-w.svg" alt="">
+              تحميل الملف التعريفي
+            </button>
 
-              <button class="g-b-btn font-15-16 text-green px-0 w-50">
-                <img class="ml-3" src="assets/images/icons/drieve-b.svg" alt="">
-عرض الملف التعريفي
-              </button>
-            </div>
+            <button class="g-b-btn font-15-16 text-green px-0 w-50">
+              <img class="ml-3" src="assets/images/icons/drive-b.svg" alt="">
+              عرض الملف التعريفي
+            </button>
+          </div>
         </div>
         <div class="col-12 col-md-6">
           <img class="img-fluid" src="assets/images/book.png" alt="">
@@ -833,8 +1023,8 @@
 
   <footer>
     <div class="">
-      <div class="row">
-        <div class="col-12 col-lg-12 col-xl-4 mb-lg-3">
+      <div class="row mb-3 mb-md-0">
+        <div class="col-12 col-lg-12 col-xl-3 mb-3 mb-lg-3">
           <div class="row">
             <div class="col-12 col-md-9 col-lg-6 col-xl-12  mx-auto">
               <h1 class="font-18-20 text-green">
@@ -1050,15 +1240,112 @@
 
   </footer>
 
-
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
+  <script src="assets/slick-master/slick/slick.min.js"></script>
+  <script src="assets/slick-master/slick/slick.js"></script>
 
+  <script src="assets/js/gsap/gsap.min.js"></script>
+  <script src="assets/js/gsap/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $('.slick-slider-all').slick({
+        draggable: false,
+        speed: 500,
+        infinite: true,
+        arrows: true,
+        prevArrow: '<div class="slick-prev"><img src="assets/images/icons/left-w.svg"></div>',
+        nextArrow: '<div class="slick-next"><img src="assets/images/icons/right-w.svg"></div>',
+        zIndex: 10000,
+        // accessibility: true,
+        variableWidth: true,
+        // focusOnSelect: false,
+        centerMode: true,
+        // rtl: true,
+        // adaptiveHeight: true pictures-slider-list
+      });
+
+      $('.pictures-slider-list').slick({
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        draggable: true,
+        speed: 500,
+        infinite: true,
+        arrows: true,
+        nextArrow: '<div class="slick-prev"> <p> الصورة التالية </p> </div>',
+        // nextArrow: '<div class="slick-next"><img src="assets/images/icons/right-w.svg"></div>',
+        zIndex: 10000,
+        // accessibility: true,
+        variableWidth: true,
+        // focusOnSelect: false,
+        centerMode: true,
+        dots: true,
+        rtl: true,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        // adaptiveHeight: true banner-slider
+      });
+
+      //
+      // while (1) {
+      //   setTimeout(
+      // function()
+      // {
+      //   //do something special
+      // }, 10000);
+      //
+      // }
+      // alert($( ".banner-slider .bg" ).length);
+      // var bgs = document.querySelectorAll(".banner-slider .bg");
+      // var i = 0;                  //  set your counter to 1
+      //
+      // function myLoop() {
+      //   var bg1 =   bgs[i];
+      //
+      //   bg1.addClass("fadeOut");         //  create a loop function
+      //   setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+      //     console.log('hello');   //  your code here
+      //     i++;                    //  increment the counter
+      //     if (i < bgs.length) {           //  if the counter < 10, call the loop function
+      //       myLoop();             //  ..  again which will trigger another
+      //     }else{
+      //       i=1;
+      //       myLoop();
+      //     }
+      //                            //  ..  setTimeout()
+      //   }, 2000)
+      // }
+      //
+      // myLoop();
+
+      // alert(bgs.length);
+      // for (var i = 0; i < bgs.length; i++) {
+      // // console.log($( ".banner-slider .bg" )[i]);
+      //     setTimeout(function() {
+      //       bgs[i].addClass('fadeOut');
+      //   }, i*2000);
+      // }
+      // $( ".banner-slider .bg" ).each(function( index ) {
+      //   // $( ".banner-slider .bg" ).fadeOut(400);
+      //   setTimeout(function() {
+      //     $( this ).fadeOut( 1000 );
+      // }, 2000);
+      //
+      //
+      //
+      //
+      // });
+    });
+  </script>
 
 
 </body>
