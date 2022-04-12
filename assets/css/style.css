@@ -380,7 +380,7 @@ button:hover, button:active, button:visited, button:focus {
   height: 70px;
   /* UI Properties */
   background: #101010 0% 0% no-repeat padding-box;
-}
+overflow: visible;}
 
 .top-banner a.btn {
   letter-spacing: 0px;

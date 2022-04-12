@@ -40,7 +40,7 @@
         مركز الرياض الدولي للمعارض والمؤتمرات
       </a>
     </div>
-    <div class="dropdown show">
+    <div class="dropdown">
       <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLanguagte" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img src="assets/images/icons/world.svg" alt="">
         العربية
@@ -1373,12 +1373,10 @@
 
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
   <script src="assets/slick-master/slick/slick.min.js"></script>
   <script src="assets/slick-master/slick/slick.js"></script>
@@ -1428,55 +1426,6 @@
         // adaptiveHeight: true banner-slider
       });
 
-      //
-      // while (1) {
-      //   setTimeout(
-      // function()
-      // {
-      //   //do something special
-      // }, 10000);
-      //
-      // }
-      // alert($( ".banner-slider .bg" ).length);
-      // var bgs = document.querySelectorAll(".banner-slider .bg");
-      // var i = 0;                  //  set your counter to 1
-      //
-      // function myLoop() {
-      //   var bg1 =   bgs[i];
-      //
-      //   bg1.addClass("fadeOut");         //  create a loop function
-      //   setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-      //     console.log('hello');   //  your code here
-      //     i++;                    //  increment the counter
-      //     if (i < bgs.length) {           //  if the counter < 10, call the loop function
-      //       myLoop();             //  ..  again which will trigger another
-      //     }else{
-      //       i=1;
-      //       myLoop();
-      //     }
-      //                            //  ..  setTimeout()
-      //   }, 2000)
-      // }
-      //
-      // myLoop();
-
-      // alert(bgs.length);
-      // for (var i = 0; i < bgs.length; i++) {
-      // // console.log($( ".banner-slider .bg" )[i]);
-      //     setTimeout(function() {
-      //       bgs[i].addClass('fadeOut');
-      //   }, i*2000);
-      // }
-      // $( ".banner-slider .bg" ).each(function( index ) {
-      //   // $( ".banner-slider .bg" ).fadeOut(400);
-      //   setTimeout(function() {
-      //     $( this ).fadeOut( 1000 );
-      // }, 2000);
-      //
-      //
-      //
-      //
-      // });
 
       test();
 
@@ -1532,7 +1481,12 @@
 
     function currentImageDisplay(position) {
       // alert(position);
+      var bg_url = $(zoomBtn[position]).css('background-image');
+      console.log("'"+bg_url+"'");
       imageBox.style.background = `url(assets/images/home/oxagon/${currentImageIdx}.png) center/cover no-repeat`;
+      // $(imageBox).css('background-image',"'"+bg_url+"'");
+      // imageBox.style.background = `url(${bg_url}) center/cover no-repeat`;
+
     }
 
     prevBtn.addEventListener('click', function() {
